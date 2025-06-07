@@ -1,0 +1,96 @@
+.contact-section {
+  text-align: center;
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: #2d3748;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 1rem;
+  background-color: var(--bg-color);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  background-color: var(--hover-color);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  margin-bottom: 1rem;
+}
+
+.contact-label {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* Ensure buttons and links look the same */
+.contact-card {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+/* Make sure buttons don't have default button styles */
+button.contact-card {
+  appearance: none;
+  -webkit-appearance: none;
+}

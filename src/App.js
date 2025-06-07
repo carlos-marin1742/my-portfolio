@@ -2,7 +2,6 @@ import "./App.css";
 import React from "react";
 import "./ContactMe";
 import ContactMe from "./ContactMe";
-import NavigationBar from "./NavigationBar";
 import ProjectsSection from "./ProjectsSection"
 
 
@@ -34,7 +33,6 @@ function AboutMe() {
 export default function App() {
   return (
     <div>
-      <NavigationBar />
       <AboutMe />
       < ProjectsSection />
       <ContactMe />

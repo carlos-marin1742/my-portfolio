@@ -5,6 +5,15 @@
   margin: 0 auto;
   text-align: center; /* Added */
 }
+  /* Flexbox Container */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+
+}
 
 .section-title {
   text-align: center;

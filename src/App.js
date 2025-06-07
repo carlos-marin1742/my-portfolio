@@ -2,7 +2,7 @@ import "./App.css";
 import React from "react";
 import "./ContactMe";
 import ContactMe from "./ContactMe";
-/*import "./navbar";*/
+import NavigationBar from "./NavigationBar";
 
 const project1 = {
   title: "Quantitative Analysis of Stock Market",
@@ -17,17 +17,7 @@ const project2 = {
   description: "sample description",
 };
 
-function AboutMe() {
-  return (
-    <div className="about-me">
-      <h1>Carlos Marin</h1>
-      <p>
-        Hello my name is Carlos Marin. I am a data scientist / data analyst,
-        with experience working with Python, SQL, Tableau, and PowerBI.
-      </p>
-    </div>
-  );
-}
+
 
 function ProjectCard1() {
   return (
@@ -57,10 +47,39 @@ function ProjectCard2() {
   );
 }
 
+function AboutMe() {
+  return (
+    <div className="about-me">
+      <img 
+        src={require("./me.jpg")}
+        alt="Carlos Marin" 
+        className="profile-pic"
+      />
+      
+      <h1>Carlos Marín</h1>
+      <h2>Data Scientist | Analyst</h2>
+      
+      <p className="intro">
+        Hi! I’m Carlos, a data professional passionate about transforming raw data 
+        into actionable insights. With expertise in <strong>Python</strong>, <strong>SQL</strong>, 
+        <strong>Tableau</strong>, and <strong>Power BI</strong>, I help businesses make data-driven decisions 
+        through clear visualizations and robust analytics.
+      </p>
+      
+      <div className="highlights">
+        <p>🔹 Turning complex problems into intuitive solutions</p>
+        <p>🔹 Building dashboards that tell compelling stories</p>
+        <p>🔹 Optimizing workflows with automation</p>
+      </div>
+    </div>
+  );
+}
+
+
 export default function App() {
   return (
     <div>
-      <navbar />
+      <NavigationBar />
       <AboutMe />
       <ProjectCard1 />
       <ProjectCard2 />

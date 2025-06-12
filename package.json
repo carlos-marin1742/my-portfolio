@@ -45,10 +45,11 @@
   "scripts": {
   
     
-  "start": "react-scripts start",
+  "clean": "rimraf build",
+  "build": "npm run clean && react-scripts build",
   
     
-  "build": "react-scripts build",
+  "start": "react-scripts start",
   
     
   "test": "react-scripts test",
@@ -125,7 +126,10 @@
   "devDependencies": {
   
     
-  "gh-pages": "^6.3.0"
+  "gh-pages": "^6.3.0",
+  
+    
+  "rimraf": "^6.0.1"
   
   }
 }

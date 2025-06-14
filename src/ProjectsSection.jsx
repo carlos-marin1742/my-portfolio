@@ -19,6 +19,7 @@ const projects = [
 // component
 function ProjectCard({ project }) {
   return (
+    <div className="project-container">
     <div className="project-card">
       <h3 className="project-title">{project.title}</h3>
       <p className="project-description">{project.description}</p>
@@ -39,6 +40,7 @@ function ProjectCard({ project }) {
           <i className="fab fa-github"></i> View on GitHub
         </button>
       </a>
+    </div>
     </div>
   );
 }

@@ -13,7 +13,7 @@ const projects = [
     link: "https://github.com/carlos-marin1742/inflation-impact-analysis",
     description: "Analyzed the impact of inflation on consumer goods and economic indicators across multiple sectors (add more details).",
     tags: ["Python", "Data Visualization", "Economics"]
-  }
+  },
     {
     title: "Optimizing Food Cost and Profitability",
     link: "https://github.com/carlos-marin1742/optimizing-cost-profitability/blob/main/Optimizing-Cost%26Profitability.ipynb",

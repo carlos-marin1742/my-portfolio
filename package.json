@@ -46,7 +46,7 @@
   
     
   "clean": "rimraf build",
-  "build": "npm run clean && react-scripts build",
+  "build": "react-scripts build && powershell -Command \"Add-Content -Path 'build\\.nojekyll' -Value ('CACHE_BUSTER=' + [int][double]::Parse((Get-Date -UFormat %%s)))\"",
   
     
   "start": "react-scripts start",

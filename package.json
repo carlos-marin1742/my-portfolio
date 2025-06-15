@@ -46,7 +46,9 @@
   
     
   "clean": "rimraf build",
-  "build": "react-scripts build && powershell -Command \"Add-Content -Path 'build\\.nojekyll' -Value ('CACHE_BUSTER=' + [int][double]::Parse((Get-Date -UFormat %%s)))\"",
+  "build": "react-scripts build && npm run create-cache-buster",
+    "create-cache-buster": "powershell -Command \"if (!(Test-Path 'build')) { New-Item -ItemType Directory -Path 'build' }; $timestamp = Get-Date -Format 'yyyyMMddHHmmss'; Add-Content -Path 'build\\.nojekyll' -Value ('CACHE_BUSTER=' + $timestamp)\"",
+    
   
     
   "start": "react-scripts start",

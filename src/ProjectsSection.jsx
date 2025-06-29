@@ -16,7 +16,7 @@ const projects = [
   },
     {
     title: "Optimizing Food Cost and Profitability",
-    link: "https://github.com/carlos-marin1742/optimizing-cost-profitability/blob/main/Optimizing-Cost%26Profitability.ipynb",
+    link: "https://github.com/carlos-marin1742/optimizing-cost-profitability/tree/main",
     description: "Optimized Food Delivery cost and operations based on findings to increase Profits",
     tags: ["Python", "Data Visualization", "Financial Modeling"]
   }

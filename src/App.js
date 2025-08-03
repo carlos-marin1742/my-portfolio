@@ -3,7 +3,7 @@ import React from "react";
 import "./ContactMe";
 import ContactMe from "./ContactMe";
 import ProjectsSection from "./ProjectsSection";
-import NavBar from "./NavBar";
+import Navbar from "./Navbar";
 
 
 
@@ -34,7 +34,7 @@ function AboutMe() {
 export default function App() {
   return (
     <div>
-      <NavBar />
+      <Navbar />
        <AboutMe /> 
       < ProjectsSection />
       <ContactMe />

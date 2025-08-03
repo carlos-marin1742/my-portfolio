@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Menu } from 'lucide-react';
 import { motion } from 'framer-motion';
-import './NavBar.css';
+import './Navbar.css';
 
-export default function Navbar() {
+function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -34,4 +34,6 @@ export default function Navbar() {
       )}
     </nav>
   );
-}
+};
+
+export default Navbar;

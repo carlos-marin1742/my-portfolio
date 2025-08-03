@@ -7,7 +7,7 @@ import Navbar from "./Navbar";
 
 
 
-function AboutMe() {
+function AboutMe({ id }) {
   return (
     <div className="about-me">
       <img 
@@ -35,9 +35,9 @@ export default function App() {
   return (
     <div>
       <Navbar />
-       <AboutMe /> 
-      < ProjectsSection />
-      <ContactMe />
+       <AboutMe id = "AboutMe" /> 
+      < ProjectsSection id = "ProjectsSection" />
+      <ContactMe id = "ContactMe" />
     </div>
   );
 }

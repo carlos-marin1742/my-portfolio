@@ -52,7 +52,7 @@ function ProjectCard({ project }) {
 }
 
 // Projects section component
-function ProjectsSection() {
+function ProjectsSection({ id }) {
   return (
     <section className="projects-section">
       <h2 className="section-title">My Projects</h2>

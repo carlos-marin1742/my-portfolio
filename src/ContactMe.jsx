@@ -3,7 +3,7 @@ import './ContactMe.css';
 // You can use react-icons or similar for better icons
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
 
-function ContactMe() {
+function ContactMe({ id }) {
   const contactLinks = [
     {
       name: 'Email',

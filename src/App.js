@@ -9,7 +9,7 @@ import Navbar from "./Navbar";
 
 function AboutMe({ id }) {
   return (
-    <div className="about-me">
+    <div id = "AboutMe" className="about-me">
       <img 
         src={require("./me.jpg")}
         alt="Carlos Marin" 

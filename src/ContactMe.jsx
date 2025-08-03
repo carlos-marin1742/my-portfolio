@@ -48,7 +48,7 @@ function ContactMe({ id }) {
   };
 
   return (
-    <div className="contact-section">
+    <div id = "ContactMe" className="contact-section">
       <h2 className="section-title">Let's Connect</h2>
       <p className="section-subtitle">Feel free to reach out through any of these platforms</p>
       

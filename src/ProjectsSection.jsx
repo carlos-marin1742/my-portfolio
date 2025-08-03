@@ -54,7 +54,7 @@ function ProjectCard({ project }) {
 // Projects section component
 function ProjectsSection({ id }) {
   return (
-    <section className="projects-section">
+    <section id = "ProjectsSection" className="projects-section">
       <h2 className="section-title">My Projects</h2>
       <div className="projects-grid">
         {projects.map((project, index) => (

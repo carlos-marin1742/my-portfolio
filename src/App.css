@@ -2,6 +2,25 @@
   font-family: sans-serif;
   text-align: center;
 }
+/*  DEEP SEEK SUGGESTIONS */
+
+/* In your App.css */
+.app-container {
+  position: relative;
+}
+/*  DEEP SEEK SUGGESTIONS */
+.navbar {
+  z-index: 1000;
+}
+/*  DEEP SEEK SUGGESTIONS */
+.content {
+  position: relative;
+  z-index: 1;
+}
+/*  DEEP SEEK SUGGESTIONS */
+.about-me {
+  padding-top: 70px; /* Adjust based on your navbar height */
+}
 
 /* General Reset */
 body {

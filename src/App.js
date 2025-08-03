@@ -2,7 +2,8 @@ import "./App.css";
 import React from "react";
 import "./ContactMe";
 import ContactMe from "./ContactMe";
-import ProjectsSection from "./ProjectsSection"
+import ProjectsSection from "./ProjectsSection";
+import NavBar from "./NavBar";
 
 
 
@@ -33,7 +34,8 @@ function AboutMe() {
 export default function App() {
   return (
     <div>
-      <AboutMe />
+      <NavBar />
+       <AboutMe /> 
       < ProjectsSection />
       <ContactMe />
     </div>

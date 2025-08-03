@@ -23,6 +23,12 @@
   "@testing-library/user-event": "^13.5.0",
   
     
+  "framer-motion": "^12.23.12",
+  
+    
+  "lucide-react": "^0.536.0",
+  
+    
   "react": "^19.1.0",
   
     
@@ -46,9 +52,12 @@
   
     
   "clean": "rimraf build",
-  "build": "react-scripts build && npm run create-cache-buster",
-    "create-cache-buster": "powershell -Command \"if (!(Test-Path 'build')) { New-Item -ItemType Directory -Path 'build' }; $timestamp = Get-Date -Format 'yyyyMMddHHmmss'; Add-Content -Path 'build\\.nojekyll' -Value ('CACHE_BUSTER=' + $timestamp)\"",
+  
     
+  "build": "react-scripts build && npm run create-cache-buster",
+  
+    
+  "create-cache-buster": "powershell -Command \"if (!(Test-Path 'build')) { New-Item -ItemType Directory -Path 'build' }; $timestamp = Get-Date -Format 'yyyyMMddHHmmss'; Add-Content -Path 'build\\.nojekyll' -Value ('CACHE_BUSTER=' + $timestamp)\"",
   
     
   "start": "react-scripts start",

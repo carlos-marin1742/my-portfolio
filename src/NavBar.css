@@ -8,7 +8,8 @@
   padding: 0 40px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background-color: white;
-  position: fixed;
+  /*sticky navbar */
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -34,7 +35,7 @@
 }
 
 .nav-links a:hover {
-  color: #007BFF; /* Change this color as desired */
+  color: #007BFF; 
 }
 
 .menu-button {

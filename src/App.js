@@ -1,9 +1,8 @@
 import "./App.css";
 import React from "react";
-import "./ContactMe";
-import ContactMe from "./ContactMe";
-import ProjectsSection from "./ProjectsSection";
-import Navbar from "./Navbar";
+import ContactMe from "./components/ContactMe/ContactMe";
+import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
+import Navbar from "./components/Navbar/Navbar";
 
 
 

@@ -3,6 +3,7 @@ import React from "react";
 import ContactMe from "./components/ContactMe/ContactMe";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import Navbar from "./components/Navbar/Navbar";
+import Recommendations from "./components/Recommendations/Recommendations";
 
 
 
@@ -36,6 +37,7 @@ export default function App() {
       <Navbar />
        <AboutMe id = "AboutMe" /> 
       < ProjectsSection id = "ProjectsSection" />
+      <Recommendations id = "Recommendations" />
       <ContactMe id = "ContactMe" />
     </div>
   );

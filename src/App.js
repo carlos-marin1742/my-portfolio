@@ -4,6 +4,7 @@ import ContactMe from "./components/ContactMe/ContactMe";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import Navbar from "./components/Navbar/Navbar";
 import Recommendations from "./components/Recommendations/Recommendations";
+import SkillsSection from "./components/Skills/Skills";
 
 
 
@@ -38,6 +39,7 @@ export default function App() {
        <AboutMe id = "AboutMe" /> 
       < ProjectsSection id = "ProjectsSection" />
       <Recommendations id = "Recommendations" />
+      <SkillsSection />
       <ContactMe id = "ContactMe" />
     </div>
   );

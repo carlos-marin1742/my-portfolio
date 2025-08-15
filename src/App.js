@@ -39,7 +39,7 @@ export default function App() {
        <AboutMe id = "AboutMe" /> 
       < ProjectsSection id = "ProjectsSection" />
       <Recommendations id = "Recommendations" />
-      <SkillsSection />
+      <SkillsSection id = "Skills" />
       <ContactMe id = "ContactMe" />
     </div>
   );

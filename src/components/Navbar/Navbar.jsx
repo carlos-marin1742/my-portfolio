@@ -13,6 +13,7 @@ function Navbar() {
       <div className="nav-links">
         <a href="#AboutMe">About Me</a>
         <a href="#ProjectsSection">Projects</a>
+        <a href="#Skills">Skills</a>
         <a href="#ContactMe">Contact</a>
       </div>
 

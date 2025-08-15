@@ -4,7 +4,7 @@ import { SiPostgresql, SiExpress, SiTensorflow, SiPytorch, SiJupyter, SiPandas, 
 import { DiJavascript } from 'react-icons/di';
 import './Skills.css';
 
-const SkillsSection = () => {
+const SkillsSection = ({ id }) => {
   const skillCategories = [
     {
       title: "PERN Stack",

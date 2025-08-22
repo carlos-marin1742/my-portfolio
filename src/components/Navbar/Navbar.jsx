@@ -15,6 +15,7 @@ function Navbar() {
         <a href="#ProjectsSection">Projects</a>
         <a href="#Skills">Skills</a>
         <a href="#ContactMe">Contact</a>
+        <a href="#Recommendations">Recommendations</a>
       </div>
 
       <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>

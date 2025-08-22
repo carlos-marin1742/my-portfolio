@@ -10,7 +10,6 @@
   background-color: white;
   /*sticky navbar */
   position: fixed;
-  z-index: 999;
   top: 0;
   left: 0;
   z-index: 1000;
@@ -32,11 +31,34 @@
   text-decoration: none;
   color: black;
   font-size: 18px;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  padding: 8px 4px;
+  position: relative;
 }
 
 .nav-links a:hover {
-  color: #007BFF; 
+  color: #007BFF;
+  font-weight: bold;
+}
+
+.nav-links a:hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #007BFF;
+  animation: underline 0.3s ease;
+}
+
+@keyframes underline {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .menu-button {
@@ -73,9 +95,12 @@
     text-decoration: none;
     color: black;
     font-size: 18px;
+    transition: all 0.3s ease;
   }
 
   .mobile-menu a:hover {
     color: #007BFF;
+    font-weight: bold;
+    text-decoration: underline;
   }
 }

@@ -20,7 +20,7 @@ function AboutMe({ id }) {
       <h2>Data Scientist | Analyst</h2>
       
       <p className="intro">
-        Hi! I’m Carlos, a data professional passionate about transforming raw data 
+        Hi! I’m Carlos Marin, a data professional passionate about transforming raw data 
         into actionable insights. With expertise in <strong>Python</strong>, <strong>SQL</strong>, 
         <strong>Tableau</strong>, and <strong>Power BI</strong>, I help businesses make data-driven decisions 
         through clear visualizations and robust analytics.

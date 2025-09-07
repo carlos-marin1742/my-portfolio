@@ -3,6 +3,8 @@ import './ContactMe.css';
 // You can use react-icons or similar for better icons
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
 
+const RESUME_URL = `${process.env.PUBLIC_URL}/DS-DA, -Marin, Carlos - Resume.pdf`;
+
 function ContactMe({ id }) {
   const contactLinks = [
     {
@@ -29,7 +31,7 @@ function ContactMe({ id }) {
     {
       name: 'Download Resume',
       icon: <FaFileDownload size={32} />,
-      url: './Marin, Carlos - Resume DS_DA.pdf',
+      url: RESUME_URL,
       color: '#6C63FF',
       hoverColor: '#564FC9',
       download: true

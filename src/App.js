@@ -1,10 +1,10 @@
-import "./App.css";
+ import "./App.css";
 import React from "react";
 import ContactMe from "./components/ContactMe/ContactMe";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import Navbar from "./components/Navbar/Navbar";
 import SkillsSection from "./components/Skills/Skills";
-import Certifications from "./components/Certifications/Certifications";
+import CertificateCard from "./components/Certifications/Certifications";
 
 
 
@@ -37,9 +37,16 @@ export default function App() {
     <div>
       <Navbar />
        <AboutMe id = "AboutMe" /> 
+       <CertificateCard
+       title = "IBM AI Developer Professional Certificate"
+       issuer = " Coursera / IBM"
+       date = "October 2025"
+       certificateId="6YBEK5B0YG6Q"
+       verifyUrl="https://coursera.org/share/d1f0df2fba82abc989de0f0199ab18a6"
+       imageUrl="/Coursera-6YBEK5B0YG6Q.jpg"
+       pdfUrl="/Coursera-6YBEK5B0YG6Q.pdf"/>
       < ProjectsSection id = "ProjectsSection" />
       <SkillsSection id = "Skills" />
-      <Certifications />
       <ContactMe id = "ContactMe" />
     </div>
   );

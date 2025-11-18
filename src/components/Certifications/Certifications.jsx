@@ -7,15 +7,16 @@ const CertificateCard = ({
   date,
   certificateId,
   verifyUrl,
-  imageUrl,
-  pdfUrl
+  /*imageUrl*/
+  /*pdfUrl*/
 }) => {
   return (
     <div style={styles.wrapper}>
-      <div style={styles.card}>
-        <img src={imageUrl} alt={`${title} Certificate`} style={styles.image} />
+        
+      <div style={styles.card}> 
+        {/*<img src={imageUrl} alt={`${title} Certificate`} style={styles.image} /> */}
+        <div style={styles.content}> 
 
-        <div style={styles.content}>
           <h2 style={styles.title}>{title}</h2>
           <p style={styles.details}><strong>Issued by:</strong> {issuer}</p>
           <p style={styles.details}><strong>Date Issued:</strong> {date}</p>
@@ -36,7 +37,7 @@ const CertificateCard = ({
             >
               Verify <FaExternalLinkAlt style={styles.icon} />
             </a>
-
+{/*}
             {pdfUrl && (
               <a
                 href={pdfUrl}
@@ -46,7 +47,8 @@ const CertificateCard = ({
               >
                 View PDF <FaFilePdf style={styles.icon} />
               </a>
-            )}
+              
+            )} */}
           </div>
         </div>
       </div>

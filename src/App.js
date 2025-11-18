@@ -4,6 +4,7 @@ import ContactMe from "./components/ContactMe/ContactMe";
 import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import Navbar from "./components/Navbar/Navbar";
 import SkillsSection from "./components/Skills/Skills";
+import Certifications from "./components/Certifications/Certifications";
 
 
 
@@ -38,6 +39,7 @@ export default function App() {
        <AboutMe id = "AboutMe" /> 
       < ProjectsSection id = "ProjectsSection" />
       <SkillsSection id = "Skills" />
+      <Certifications />
       <ContactMe id = "ContactMe" />
     </div>
   );

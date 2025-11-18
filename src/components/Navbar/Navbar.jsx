@@ -14,6 +14,7 @@ function Navbar() {
         <a href="#AboutMe">About Me</a>
         <a href="#ProjectsSection">Projects</a>
         <a href="#Skills">Skills</a>
+        <a href="#certifications">Certifications</a>
         <a href="#ContactMe">Contact</a>
       </div>
 
@@ -30,6 +31,7 @@ function Navbar() {
         >
           <a href="#about" onClick={() => setIsOpen(false)}>About Me</a>
           <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
+          <a href="#certifications" onClick={() => setIsOpen(false)}>Certifications</a>
           <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
         </motion.div>
       )}

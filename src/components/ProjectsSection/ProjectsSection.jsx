@@ -3,22 +3,28 @@ import "./ProjectsSection.css";
 
 const projects = [
   {
-    title: "Quantitative Analysis of Stock Market",
-    link: "https://github.com/carlos-marin1742/quantitative-analysis-stocks",
-    description: "Analyzed Stock Market data for Netflix, Google, Microsoft, and Apple using time series analysis, volatility analysis, and comparative analysis techniques.",
-    tags: ["Python", "Pandas", "Matplotlib", "Finance"]
+    title: "NeuroScan AI - Brain Tumor Object Detection",
+    link: "https://github.com/carlos-marin1742/BrainTumorObjectDetection",
+    description: "Engineered a high-performance MRI diagnostic platform that bridges a Node.js/Express backend with a custom-trained YOLO computer vision pipeline to automate brain tumor classification and confidence-score reporting.",
+    tags: ["React", "Node.js", "YOLO (Computer Vision)", "Python"]
   },
   {
-    title: "Inflation Impact Analysis",
+    title: "AI Image Generator",
     link: "https://github.com/carlos-marin1742/inflation-impact-analysis",
-    description: "Analyzed the impact of inflation on consumer goods and economic indicators across multiple sectors (add more details).",
-    tags: ["Python", "Data Visualization", "Economics"]
+    description: "A React-powered AI image generation app that leverages Hugging Face's Inference API to transform text prompts into stunning visuals across multiple state-of-the-art diffusion models.",
+    tags: ["React", "Hugging Face Inference API", "Javascript"]
   },
     {
-    title: "Optimizing Food Cost and Profitability",
-    link: "https://github.com/carlos-marin1742/optimizing-cost-profitability/tree/main",
-    description: "Optimized Food Delivery cost and operations based on findings to increase Profits",
-    tags: ["Python", "Data Visualization", "Financial Modeling"]
+    title: "AI Cover Letter Architect",
+    link: "https://github.com/carlos-marin1742/AI-cover-letter-generator",
+    description: "An automated career-tech solution that engineers a high-fidelity data pipeline between Gemini 3 and unstructured PDF data to synthesize bespoke, job-aligned cover letters in seconds.",
+    tags: ["Python / Flask", "Langchain", "Gemini 3 (LLM)", "Bootstrap"]
+  },
+  {
+    title: "AI Stock Advisor",
+    link: "https://github.com/carlos-marin1742/AI-Advisor-with-OLLAMA",
+    description: "Real-time AI stock advisor that fetches live market data, computes technical indicators (RSI, EMA, Bollinger Bands), and generates LLM-powered trade insights on a scheduled pipeline.",
+    tags: ["Python / Streamlit", "yFinance API", "Ollama (Gemma 3 LLM)", "Pandas & Technical Analysis"]
   }
 ];
 

@@ -10,7 +10,7 @@ const projects = [
   },
   {
     title: "AI Image Generator",
-    link: "https://github.com/carlos-marin1742/inflation-impact-analysis",
+    link: "https://github.com/carlos-marin1742/image-generator",
     description: "A React-powered AI image generation app that leverages Hugging Face's Inference API to transform text prompts into stunning visuals across multiple state-of-the-art diffusion models.",
     tags: ["React", "Hugging Face Inference API", "Javascript"]
   },

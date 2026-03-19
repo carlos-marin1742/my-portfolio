@@ -17,7 +17,7 @@ const projects = [
     {
     title: "AI Cover Letter Architect",
     link: "https://github.com/carlos-marin1742/AI-cover-letter-generator",
-    description: "An automated career-tech solution that engineers a high-fidelity data pipeline between Gemini 3 and unstructured PDF data to synthesize bespoke, job-aligned cover letters in seconds.",
+    description: "A production-grade cover letter generator powered by a RAG pipeline — retrieves relevant context from a personal knowledge base, injects it alongside your resume and job description, and uses Gemini to synthesize tailored, grounded cover letters in seconds. Includes a custom eval framework measuring retrieval precision, grounding, and output quality.",
     tags: ["Python / Flask", "Langchain", "Gemini 3 (LLM)", "Bootstrap"]
   },
   {

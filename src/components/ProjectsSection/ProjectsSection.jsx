@@ -2,6 +2,12 @@
 import "./ProjectsSection.css";
 
 const projects = [
+    {
+    title: "Agent Data Scientist"
+    link: "https://github.com/carlos-marin1742/AgentDataScientist",
+    description: "A production-grade AI data scientist agent powered by LLaMA 3.3 70B via Groq — ingests any CSV, extracts schema metadata, and runs a two-stage agentic pipeline: first generating structured, executable EDA Python code across 7 analysis sections, then producing a strategic insights report with data quality flags, correlation analysis, and modeling recommendations. Visualizations render inline via Streamlit with full session state persistence.",
+    tags: ["Python / Streamlit", "Langchain", "Groq", "LLAMA 3.3 70B", "Pandas", "Matplotlib", "Seaborn"]
+  },  
   {
     title: "NeuroScan AI - Brain Tumor Object Detection",
     link: "https://github.com/carlos-marin1742/BrainTumorObjectDetection",

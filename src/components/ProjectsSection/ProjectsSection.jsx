@@ -6,7 +6,7 @@ const projects = [
     title: "Agent Data Scientist",
     link: "https://github.com/carlos-marin1742/AgentDataScientist",
     description: "Two-stage AI agent that turns any CSV into production-ready EDA code and a strategic insights report — LLaMA 3.3 70B via Groq generates 7-section structured Python, executes it live, and renders visualizations inline. Zero manual analysis required.",
-    tags: ["Python / Streamlit", "Langchain", "Groq", "LLAMA 3.3 70B", "Pandas", "Matplotlib", "Seaborn"]
+    tags: ["Python / FastAPI", "Langchain", "Groq(LLAMA 3.3 70B)", "React.JS"]
   },  
   {
     title: "NeuroScan AI - Brain Tumor Object Detection",

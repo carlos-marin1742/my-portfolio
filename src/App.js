@@ -18,7 +18,7 @@ function AboutMe({ id }) {
       />
       
       <h1>Carlos Marin</h1>
-      <h2>AI Developer | Full Stack Engineer</h2>
+      <h2>Full Stack AI Engineer</h2>
       
       <p className="intro">
 
@@ -26,10 +26,10 @@ function AboutMe({ id }) {
         Hi! I’m <strong>Carlos Marin</strong>, a developer who builds applications that think. 
         With a background in Data Science and Clinical Research, I spent years 
         analyzing complex biological data. But I realized I didn't just want to analyze the 
-        data—I wanted to build the tools that power it. I am an <strong>IBM Certified AI Developer</strong> and 
-        a <strong>Codecademy Certified Full Stack Engineer</strong>. This dual expertise allows me to 
+        data—I wanted to build the tools that power it. I am dual <strong>IBM Certified</strong> in <strong>AI Development</strong> and <strong>AI Engineering </strong>  
+        as well as <strong>Codecademy Certified Full Stack Engineer</strong>. This expertise allows me to 
         handle the entire lifecycle of an intelligent application. I don’t just train GenAI models in Python; 
-        I deploy them into production using React, Node.js, and Flask.
+        I deploy them into production using React, Node.js, and Python.
         My goal is to bridge the gap between sophisticated Machine Learning and 
         seamless user experiences, creating software that is efficient, scalable, and 
         solves real-world problems.
@@ -44,7 +44,15 @@ export default function App() {
   return (
     <div>
       <Navbar />
-       <AboutMe id = "AboutMe" /> 
+       <AboutMe id = "AboutMe" />
+      <CertificateCard
+       title = "IBM AI Engineer Professional Certificate"
+       issuer = " Coursera / IBM"
+       date = "April 2026"
+       certificateId="8MVTIBFQMGZ9"
+       verifyUrl="https://coursera.org/share/5dd1265e3197e86e5c22226a6468015a"
+       /*imageUrl="/Coursera-6YBEK5B0YG6Q.jpg"*/
+       /*pdfUrl="/Coursera-6YBEK5B0YG6Q.pdf"*//> 
        <CertificateCard
        title = "IBM AI Developer Professional Certificate"
        issuer = " Coursera / IBM"

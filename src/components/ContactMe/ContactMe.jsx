@@ -3,7 +3,7 @@ import './ContactMe.css';
 // You can use react-icons or similar for better icons
 import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
 
-const RESUME_URL = `${process.env.PUBLIC_URL}/TECH-RESUME.pdf`;
+const RESUME_URL = `${process.env.PUBLIC_URL}/tech-resume.pdf`;
 
 function ContactMe({ id }) {
   const contactLinks = [

@@ -1,93 +1,101 @@
-import React from 'react';
-import './ContactMe.css';
-// You can use react-icons or similar for better icons
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
+import React from "react";
+import "./ContactMe.css";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaFileDownload,
+} from "react-icons/fa";
 
 const RESUME_URL = `${process.env.PUBLIC_URL}/TECH-RESUME.pdf`;
 
-function ContactMe({ id }) {
-  const contactLinks = [
-    {
-      name: 'Email',
-      icon: <FaEnvelope size={32} />,
-      url: 'mailto:carlos-marinjr1@outlook.com',
-      color: '#EA4335',
-      hoverColor: '#D33426'
-    },
-    {
-      name: 'GitHub',
-      icon: <FaGithub size={32} />,
-      url: 'https://github.com/carlos-marin1742',
-      color: '#333333',
-      hoverColor: '#24292E'
-    },
-    {
-      name: 'LinkedIn',
-      icon: <FaLinkedin size={32} />,
-      url: 'https://www.linkedin.com/in/carlos-marin-90482b13b/',
-      color: '#0077B5',
-      hoverColor: '#005582'
-    },
-    {
-      name: 'Download Resume',
-      icon: <FaFileDownload size={32} />,
-      url: RESUME_URL,
-      color: '#6C63FF',
-      hoverColor: '#564FC9',
-      download: true
-    }
-  ];
+const contactLinks = [
+  {
+    name: "Email",
+    detail: "carlos-marinjr1@outlook.com",
+    icon: <FaEnvelope size={24} />,
+    url: "mailto:carlos-marinjr1@outlook.com",
+  },
+  {
+    name: "GitHub",
+    detail: "carlos-marin1742",
+    icon: <FaGithub size={24} />,
+    url: "https://github.com/carlos-marin1742",
+  },
+  {
+    name: "LinkedIn",
+    detail: "carlos-marin",
+    icon: <FaLinkedin size={24} />,
+    url: "https://www.linkedin.com/in/carlos-marin-90482b13b/",
+  },
+  {
+    name: "Resume",
+    detail: "Download PDF",
+    icon: <FaFileDownload size={24} />,
+    url: RESUME_URL,
+    download: true,
+  },
+];
 
-    const handleDownload = (e, url) => {
+function ContactMe() {
+  const handleDownload = (e, url) => {
     e.preventDefault();
-    // Create a temporary anchor element
-    const link = document.createElement('a');
+    const link = document.createElement("a");
     link.href = url;
-    link.download = url.split('/').pop() || 'resume.pdf';
+    link.download = url.split("/").pop() || "resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   return (
-    <div id = "ContactMe" className="contact-section">
-      <h2 className="section-title">Let's Connect</h2>
-      <p className="section-subtitle">Feel free to reach out through any of these platforms</p>
-      
+    <section id="ContactMe" className="section contact-section">
+      <div className="section-head">
+        <span className="section-eyebrow">[ contact ]</span>
+        <h2>Let's Connect</h2>
+      </div>
+      <p className="contact-subtitle">
+        Open to full-time roles, freelance projects, and interesting
+        conversations about AI.
+      </p>
+
       <div className="contact-grid">
-        {contactLinks.map((link, index) => (
+        {contactLinks.map((link) =>
           link.download ? (
             <button
-              key={index}
+              key={link.name}
               onClick={(e) => handleDownload(e, link.url)}
               className="contact-card"
-              style={{ 
-                '--bg-color': link.color,
-                '--hover-color': link.hoverColor
-              }}
             >
-              <div className="contact-icon">{link.icon}</div>
-              <span className="contact-label">{link.name}</span>
+              <span className="contact-icon">{link.icon}</span>
+              <span className="contact-text">
+                <span className="contact-label">{link.name}</span>
+                <span className="contact-detail">{link.detail}</span>
+              </span>
             </button>
           ) : (
-            <a 
-              key={index}
+            <a
+              key={link.name}
               href={link.url}
               target="_blank"
               rel="noopener noreferrer"
               className="contact-card"
-              style={{ 
-                '--bg-color': link.color,
-                '--hover-color': link.hoverColor
-              }}
             >
-              <div className="contact-icon">{link.icon}</div>
-              <span className="contact-label">{link.name}</span>
+              <span className="contact-icon">{link.icon}</span>
+              <span className="contact-text">
+                <span className="contact-label">{link.name}</span>
+                <span className="contact-detail">{link.detail}</span>
+              </span>
             </a>
           )
-        ))}
+        )}
       </div>
-    </div>
+
+      <footer className="site-footer">
+        <span>© {new Date().getFullYear()} Carlos Marin</span>
+        <span className="footer-mono">built with React · Houston, TX</span>
+      </footer>
+    </section>
   );
 }
 

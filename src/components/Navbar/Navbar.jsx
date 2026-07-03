@@ -1,42 +1,66 @@
-import { useState } from 'react';
-import { Menu } from 'lucide-react';
-import { motion } from 'framer-motion';
-import './Navbar.css';
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import "./Navbar.css";
+
+const links = [
+  { label: "About", href: "#AboutMe" },
+  { label: "Projects", href: "#ProjectsSection" },
+  { label: "Skills", href: "#Skills" },
+  { label: "Certifications", href: "#certifications" },
+  { label: "Contact", href: "#ContactMe" },
+];
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <div className="logo">Carlos Marin's Portfolio</div>
+      <a href="#AboutMe" className="logo">
+        <span className="logo-mark">CM</span>
+        <span className="logo-text">carlos.marin</span>
+      </a>
 
       <div className="nav-links">
-        <a href="#AboutMe">About Me</a>
-        <a href="#ProjectsSection">Projects</a>
-        <a href="#Skills">Skills</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#ContactMe">Contact</a>
+        {links.map((link) => (
+          <a key={link.href} href={link.href}>
+            {link.label}
+          </a>
+        ))}
       </div>
 
-      <button className="menu-button" onClick={() => setIsOpen(!isOpen)}>
-        <Menu size={28} />
+      <button
+        className="menu-button"
+        onClick={() => setIsOpen(!isOpen)}
+        aria-expanded={isOpen}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+      >
+        {isOpen ? <X size={26} /> : <Menu size={26} />}
       </button>
 
-      {isOpen && (
-        <motion.div 
-          initial={{ opacity: 0, y: -20 }} 
-          animate={{ opacity: 1, y: 0 }} 
-          exit={{ opacity: 0, y: -20 }}
-          className="mobile-menu"
-        >
-          <a href="#about" onClick={() => setIsOpen(false)}>About Me</a>
-          <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>
-          <a href="#certifications" onClick={() => setIsOpen(false)}>Certifications</a>
-          <a href="#contact" onClick={() => setIsOpen(false)}>Contact</a>
-        </motion.div>
-      )}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -12 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -12 }}
+            transition={{ duration: 0.18 }}
+            className="mobile-menu"
+          >
+            {links.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                onClick={() => setIsOpen(false)}
+              >
+                {link.label}
+              </a>
+            ))}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </nav>
   );
-};
+}
 
 export default Navbar;

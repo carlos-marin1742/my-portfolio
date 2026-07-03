@@ -1,97 +1,86 @@
-.contact-section {
-  text-align: center;
-  padding: 3rem 1rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
-
-.section-title {
-  font-size: 2.2rem;
-  margin-bottom: 0.5rem;
-  color: #2d3748;
-  font-weight: 600;
-}
-
-.section-subtitle {
-  font-size: 1.1rem;
-  color: #4a5568;
-  margin-bottom: 2.5rem;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+.contact-subtitle {
+  font-size: 1rem;
+  color: var(--ink-soft);
+  margin: -24px 0 36px;
+  max-width: 52ch;
 }
 
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.5rem;
-  padding: 0 2rem;
-  margin-bottom: 40px
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 16px;
 }
 
 .contact-card {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 1.5rem 1rem;
-  background-color: var(--bg-color);
-  color: white;
-  border-radius: 12px;
+  gap: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
   text-decoration: none;
-  transition: all 0.3s ease;
-  height: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  box-shadow: var(--shadow);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  background-color: var(--hover-color);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  border-color: var(--blue);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
 }
 
 .contact-icon {
-  margin-bottom: 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--blue-tint);
+  color: var(--blue);
+}
+
+.contact-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
 }
 
 .contact-label {
-  font-size: 1.1rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--ink);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.contact-detail {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--ink-faint);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-@media (max-width: 480px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .section-title {
-    font-size: 1.8rem;
-  }
-  
-  .section-subtitle {
-    font-size: 1rem;
-  }
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 72px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
+  color: var(--ink-faint);
 }
 
-/* Ensure buttons and links look the same */
-.contact-card {
-  border: none;
-  cursor: pointer;
-  font-family: inherit;
-}
-
-/* Make sure buttons don't have default button styles */
-button.contact-card {
-  appearance: none;
-  -webkit-appearance: none;
+.footer-mono {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
 }

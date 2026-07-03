@@ -5,6 +5,7 @@ import ProjectsSection from "./components/ProjectsSection/ProjectsSection";
 import Navbar from "./components/Navbar/Navbar";
 import SkillsSection from "./components/Skills/Skills";
 import CertificateCard from "./components/Certifications/Certifications";
+import ExperienceSection from "./components/Experience/Experience";
 
 const certifications = [
   {
@@ -98,6 +99,7 @@ export default function App() {
       <ProjectsSection />
       <SkillsSection />
       <CertificationsSection />
+      <ExperienceSection />
       <ContactMe />
     </div>
   );

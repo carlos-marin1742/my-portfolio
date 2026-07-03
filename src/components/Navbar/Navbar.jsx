@@ -5,6 +5,7 @@ import "./Navbar.css";
 
 const links = [
   { label: "About", href: "#AboutMe" },
+  { label: "Experience", href: "#Experience" },
   { label: "Projects", href: "#ProjectsSection" },
   { label: "Skills", href: "#Skills" },
   { label: "Certifications", href: "#certifications" },
@@ -16,6 +17,7 @@ function Navbar() {
 
   return (
     <nav className="navbar">
+      <div className= "navbar-inner">
       <a href="#AboutMe" className="logo">
         <span className="logo-mark">CM</span>
         <span className="logo-text">carlos.marin</span>
@@ -59,6 +61,7 @@ function Navbar() {
           </motion.div>
         )}
       </AnimatePresence>
+      </div>
     </nav>
   );
 }

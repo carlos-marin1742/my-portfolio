@@ -69,7 +69,7 @@
   "build": "react-scripts build && npm run create-cache-buster",
   
     
-  "create-cache-buster": "mkdir -p build && date +\"CACHE_BUSTER=%Y%m%d%H%M%S\" > build/.nojekyll",
+  "create-cache-buster": "node -e \"const fs=require('fs');fs.mkdirSync('build',{recursive:true});fs.writeFileSync('build/.nojekyll','CACHE_BUSTER='+new Date().toISOString().replace(/[-:.TZ]/g,''))\"",
   
     
   "start": "react-scripts start",
